@@ -1,0 +1,2653 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://os.mbed.com/platforms/ST-Nucleo-F401RE/#overview -->
+<html class="no-js" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    <title>NUCLEO-F401RE | Mbed</title>
+    
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="user-scalable=yes,width=device-width,initial-scale=0.9">
+
+    
+
+<!-- Google Analytics -->
+<script type="text/javascript" async="" src="./NUCLEO-F401RE _ Mbed_files/js"></script><script type="text/javascript" async="" src="./NUCLEO-F401RE _ Mbed_files/analytics.js"></script><script type="text/javascript" async="" src="./NUCLEO-F401RE _ Mbed_files/js(1)"></script><script async="" src="./NUCLEO-F401RE _ Mbed_files/gtm.js"></script><script async="" src="./NUCLEO-F401RE _ Mbed_files/analytics.js"></script><script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1447836-8');
+ga('require', 'GTM-WXMLD4S')
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl+'&gtm_auth=SMYNPwM0ICsV00c1ZHETqQ&gtm_preview=env-2&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M6FZ495');</script>
+
+
+    <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:971746,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script><script async="" src="./NUCLEO-F401RE _ Mbed_files/hotjar-971746.js"></script>
+
+
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" sizes="57x57" href="https://os.mbed.com/static/img/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://os.mbed.com/static/img/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://os.mbed.com/static/img/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://os.mbed.com/static/img/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://os.mbed.com/static/img/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://os.mbed.com/static/img/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://os.mbed.com/static/img/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://os.mbed.com/static/img/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://os.mbed.com/static/img/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://os.mbed.com/static/img/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://os.mbed.com/static/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://os.mbed.com/static/img/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://os.mbed.com/static/img/favicons/favicon-16x16.png">
+<link rel="manifest" href="https://os.mbed.com/static/img/favicons/manifest.json">
+<link rel="shortcut icon" href="https://os.mbed.com/static/img/favicon.ico?">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/static/img/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="./NUCLEO-F401RE _ Mbed_files/css">
+
+<link rel="stylesheet" href="./NUCLEO-F401RE _ Mbed_files/output.811e2930ab34.css" type="text/css">
+
+
+    
+    
+
+    <link rel="stylesheet" type="text/css" href="./NUCLEO-F401RE _ Mbed_files/legacy-main.986d36e4640c.css">
+    <script type="text/javascript" src="./NUCLEO-F401RE _ Mbed_files/legacy-bundle.d4c318d04056.js"></script>
+
+    <script src="./NUCLEO-F401RE _ Mbed_files/output.b4f0ddd57a31.js"></script>
+    <script type="text/javascript">
+        var MTIProjectId='531df303-da6d-4e1e-934d-ec3ecdc164a9';
+        (function() {
+            var mtiTracking = document.createElement('script');
+            mtiTracking.type='text/javascript';
+            mtiTracking.async='true';
+            mtiTracking.src="/static/js/mtiFontTrackingCode.js";
+            (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild( mtiTracking );
+        })();
+    </script><script type="text/javascript" async="" src="./NUCLEO-F401RE _ Mbed_files/mtiFontTrackingCode.js"></script>
+
+    
+    
+    
+<script async="" src="./NUCLEO-F401RE _ Mbed_files/modules.79484904679daf64371c.js" charset="utf-8"></script><script src="./NUCLEO-F401RE _ Mbed_files/bundle.js"></script><style>.ub-emb-iframe-wrapper{display:none;position:relative;vertical-align:middle}.ub-emb-iframe-wrapper.ub-emb-visible{display:inline-block}.ub-emb-iframe-wrapper .ub-emb-close{background-color:hsla(0,0%,100%,.6);border:0;border-radius:50%;color:#525151;cursor:pointer;font-family:Arial,sans-serif;font-size:20px;font-weight:400;height:20px;line-height:1;outline:none;padding:0;position:absolute;right:10px;text-align:center;top:10px;transition:transform .2s ease-in-out,background-color .2s ease-in-out;width:20px;z-index:1}.ub-emb-iframe-wrapper.ub-emb-mobile .ub-emb-close{transition:none}.ub-emb-iframe-wrapper .ub-emb-close:before{content:"";height:40px;position:absolute;right:-10px;top:-10px;width:40px}.ub-emb-iframe-wrapper .ub-emb-close:hover{background-color:#fff;-ms-transform:scale(1.2);transform:scale(1.2)}.ub-emb-iframe-wrapper .ub-emb-close:active,.ub-emb-iframe-wrapper .ub-emb-close:focus{background:hsla(0,0%,100%,.35);color:#444;outline:none}.ub-emb-iframe-wrapper .ub-emb-iframe{border:0;max-height:100%;max-width:100%}.ub-emb-overlay .ub-emb-iframe-wrapper .ub-emb-iframe{box-shadow:0 0 12px rgba(0,0,0,.3),0 1px 5px rgba(0,0,0,.2)}.ub-emb-overlay .ub-emb-iframe-wrapper.ub-emb-mobile{max-width:100vw}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL0lmcmFtZVdyYXBwZXIuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHVCQUVFLFlBQWEsQ0FDYixpQkFBa0IsQ0FDbEIscUJBQ0YsQ0FFQSxzQ0FDRSxvQkFDRixDQUVBLHFDQUNFLG1DQUF5QyxDQUV6QyxRQUFTLENBRFQsaUJBQWtCLENBRWxCLGFBQWMsQ0FDZCxjQUFlLENBQ2YsNEJBQThCLENBQzlCLGNBQWUsQ0FDZixlQUFtQixDQUNuQixXQUFZLENBQ1osYUFBYyxDQUNkLFlBQWEsQ0FDYixTQUFVLENBQ1YsaUJBQWtCLENBQ2xCLFVBQVcsQ0FDWCxpQkFBa0IsQ0FDbEIsUUFBUyxDQUNULHFFQUEyRSxDQUMzRSxVQUFXLENBQ1gsU0FDRixDQUVBLG1EQUNFLGVBQ0YsQ0FFQSw0Q0FDRSxVQUFXLENBQ1gsV0FBWSxDQUNaLGlCQUFrQixDQUNsQixXQUFZLENBQ1osU0FBVSxDQUNWLFVBQ0YsQ0FFQSwyQ0FDRSxxQkFBc0IsQ0FDdEIsd0JBQXFCLENBQXJCLG9CQUNGLENBRUEsdUZBRUUsOEJBQW9DLENBQ3BDLFVBQVcsQ0FDWCxZQUNGLENBRUEsc0NBRUUsUUFBUyxDQUNULGVBQWdCLENBQ2hCLGNBQ0YsQ0FFQSxzREFDRSwyREFDRixDQUVBLHFEQUNFLGVBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIudWItZW1iLWlmcmFtZS13cmFwcGVyIHtcbiAgLyogVGhpcyBlbGVtZW50IGlzIHNpemVkIGF0IGNvbXBvbmVudCByZW5kZXIgdGltZSAqL1xuICBkaXNwbGF5OiBub25lO1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XG59XG5cbi51Yi1lbWItaWZyYW1lLXdyYXBwZXIudWItZW1iLXZpc2libGUge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG5cbi51Yi1lbWItaWZyYW1lLXdyYXBwZXIgLnViLWVtYi1jbG9zZSB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMjU1LCAyNTUsIDI1NSwgLjYpO1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIGJvcmRlcjogMDtcbiAgY29sb3I6ICM1MjUxNTE7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgZm9udC1mYW1pbHk6IEFyaWFsLCBzYW5zLXNlcmlmO1xuICBmb250LXNpemU6IDIwcHg7XG4gIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gIGhlaWdodDogMjBweDtcbiAgbGluZS1oZWlnaHQ6IDE7XG4gIG91dGxpbmU6IG5vbmU7XG4gIHBhZGRpbmc6IDA7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgcmlnaHQ6IDEwcHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgdG9wOiAxMHB4O1xuICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMjAwbXMgZWFzZS1pbi1vdXQsIGJhY2tncm91bmQtY29sb3IgMjAwbXMgZWFzZS1pbi1vdXQ7XG4gIHdpZHRoOiAyMHB4O1xuICB6LWluZGV4OiAxO1xufVxuXG4udWItZW1iLWlmcmFtZS13cmFwcGVyLnViLWVtYi1tb2JpbGUgLnViLWVtYi1jbG9zZSB7XG4gIHRyYW5zaXRpb246IG5vbmU7XG59XG5cbi51Yi1lbWItaWZyYW1lLXdyYXBwZXIgLnViLWVtYi1jbG9zZTo6YmVmb3JlIHtcbiAgY29udGVudDogJyc7XG4gIGhlaWdodDogNDBweDtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICByaWdodDogLTEwcHg7XG4gIHRvcDogLTEwcHg7XG4gIHdpZHRoOiA0MHB4O1xufVxuXG4udWItZW1iLWlmcmFtZS13cmFwcGVyIC51Yi1lbWItY2xvc2U6aG92ZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmO1xuICB0cmFuc2Zvcm06IHNjYWxlKDEuMik7XG59XG5cbi51Yi1lbWItaWZyYW1lLXdyYXBwZXIgLnViLWVtYi1jbG9zZTphY3RpdmUsXG4udWItZW1iLWlmcmFtZS13cmFwcGVyIC51Yi1lbWItY2xvc2U6Zm9jdXMge1xuICBiYWNrZ3JvdW5kOiByZ2JhKDI1NSwgMjU1LCAyNTUsIC4zNSk7XG4gIGNvbG9yOiAjNDQ0O1xuICBvdXRsaW5lOiBub25lO1xufVxuXG4udWItZW1iLWlmcmFtZS13cmFwcGVyIC51Yi1lbWItaWZyYW1lIHtcbiAgLyogVGhpcyBlbGVtZW50IGlzIHNpemVkIGF0IGNvbXBvbmVudCByZW5kZXIgdGltZSAqL1xuICBib3JkZXI6IDA7XG4gIG1heC1oZWlnaHQ6IDEwMCU7XG4gIG1heC13aWR0aDogMTAwJTtcbn1cblxuLnViLWVtYi1vdmVybGF5IC51Yi1lbWItaWZyYW1lLXdyYXBwZXIgLnViLWVtYi1pZnJhbWUge1xuICBib3gtc2hhZG93OiAwIDAgMTJweCByZ2JhKDAsIDAsIDAsIC4zKSwgMCAxcHggNXB4IHJnYmEoMCwgMCwgMCwgLjIpO1xufVxuXG4udWItZW1iLW92ZXJsYXkgLnViLWVtYi1pZnJhbWUtd3JhcHBlci51Yi1lbWItbW9iaWxlIHtcbiAgbWF4LXdpZHRoOiAxMDB2dztcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.ub-emb-overlay{transition:visibility .3s step-end;visibility:hidden}.ub-emb-overlay.ub-emb-visible{transition:none;visibility:visible}.ub-emb-overlay .ub-emb-backdrop,.ub-emb-overlay .ub-emb-scroll-wrapper{opacity:0;position:fixed;transition:opacity .3s ease,z-index .3s step-end;z-index:-1}.ub-emb-overlay .ub-emb-backdrop{background:rgba(0,0,0,.6);bottom:-1000px;left:-1000px;right:-1000px;top:-1000px}.ub-emb-overlay .ub-emb-scroll-wrapper{-webkit-overflow-scrolling:touch;bottom:0;box-sizing:border-box;left:0;overflow:auto;padding:30px;right:0;text-align:center;top:0;white-space:nowrap;width:100%}.ub-emb-overlay .ub-emb-scroll-wrapper:before{content:"";display:inline-block;height:100%;vertical-align:middle}.ub-emb-overlay.ub-emb-mobile .ub-emb-scroll-wrapper{padding:30px 0}.ub-emb-overlay.ub-emb-visible .ub-emb-backdrop,.ub-emb-overlay.ub-emb-visible .ub-emb-scroll-wrapper{opacity:1;transition:opacity .4s ease;z-index:2147483647}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL092ZXJsYXkuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGdCQUNFLGtDQUFvRCxDQUNwRCxpQkFDRixDQUVBLCtCQUNFLGVBQWdCLENBQ2hCLGtCQUNGLENBRUEsd0VBRUUsU0FBVSxDQUNWLGNBQWUsQ0FDZixnREFFdUMsQ0FDdkMsVUFDRixDQUdBLGlDQUNFLHlCQUE2QixDQUU3QixjQUFlLENBQ2YsWUFBYSxDQUNiLGFBQWMsQ0FIZCxXQUlGLENBRUEsdUNBV0UsZ0NBQWlDLENBUmpDLFFBQVMsQ0FGVCxxQkFBc0IsQ0FHdEIsTUFBTyxDQUVQLGFBQWMsQ0FDZCxZQUF3QixDQUZ4QixPQUFRLENBR1IsaUJBQWtCLENBTmxCLEtBQU0sQ0FRTixrQkFBbUIsQ0FEbkIsVUFHRixDQUVBLDhDQUNFLFVBQVcsQ0FDWCxvQkFBcUIsQ0FDckIsV0FBWSxDQUNaLHFCQUNGLENBRUEscURBQ0UsY0FDRixDQUVBLHNHQUVFLFNBQVUsQ0FDViwyQkFBZ0UsQ0FHaEUsa0JBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIudWItZW1iLW92ZXJsYXkge1xuICB0cmFuc2l0aW9uOiB2aXNpYmlsaXR5ICRvdmVybGF5RmFkZU91dFNwZWVkIHN0ZXAtZW5kO1xuICB2aXNpYmlsaXR5OiBoaWRkZW47XG59XG5cbi51Yi1lbWItb3ZlcmxheS51Yi1lbWItdmlzaWJsZSB7XG4gIHRyYW5zaXRpb246IG5vbmU7XG4gIHZpc2liaWxpdHk6IHZpc2libGU7XG59XG5cbi51Yi1lbWItb3ZlcmxheSAudWItZW1iLWJhY2tkcm9wLFxuLnViLWVtYi1vdmVybGF5IC51Yi1lbWItc2Nyb2xsLXdyYXBwZXIge1xuICBvcGFjaXR5OiAwO1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIHRyYW5zaXRpb246XG4gICAgb3BhY2l0eSAkb3ZlcmxheUZhZGVPdXRTcGVlZCAkb3ZlcmxheUZhZGVUcmFuc2l0aW9uRm4sXG4gICAgei1pbmRleCAkb3ZlcmxheUZhZGVPdXRTcGVlZCBzdGVwLWVuZDtcbiAgei1pbmRleDogLTE7XG59XG5cbi8qIGZvciB0aGUgc2FrZSBvZiBtb2JpbGUgYnJvd3NlcnMsIG1ha2UgdGhlIGJhY2tkcm9wIGV4dGVuZCAxMDAwcHggb3V0c2lkZSBvZiB0aGUgd2luZG93ICovXG4udWItZW1iLW92ZXJsYXkgLnViLWVtYi1iYWNrZHJvcCB7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgLjYpO1xuICB0b3A6IC0xMDAwcHg7XG4gIGJvdHRvbTogLTEwMDBweDtcbiAgbGVmdDogLTEwMDBweDtcbiAgcmlnaHQ6IC0xMDAwcHg7XG59XG5cbi51Yi1lbWItb3ZlcmxheSAudWItZW1iLXNjcm9sbC13cmFwcGVyIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgdG9wOiAwO1xuICBib3R0b206IDA7XG4gIGxlZnQ6IDA7XG4gIHJpZ2h0OiAwO1xuICBvdmVyZmxvdzogYXV0bztcbiAgcGFkZGluZzogJG92ZXJsYXlQYWRkaW5nO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHdpZHRoOiAxMDAlO1xuICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICAtd2Via2l0LW92ZXJmbG93LXNjcm9sbGluZzogdG91Y2g7XG59XG5cbi51Yi1lbWItb3ZlcmxheSAudWItZW1iLXNjcm9sbC13cmFwcGVyOjpiZWZvcmUge1xuICBjb250ZW50OiAnJztcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBoZWlnaHQ6IDEwMCU7XG4gIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XG59XG5cbi51Yi1lbWItb3ZlcmxheS51Yi1lbWItbW9iaWxlIC51Yi1lbWItc2Nyb2xsLXdyYXBwZXIge1xuICBwYWRkaW5nOiAkb3ZlcmxheVBhZGRpbmcgMDtcbn1cblxuLnViLWVtYi1vdmVybGF5LnViLWVtYi12aXNpYmxlIC51Yi1lbWItYmFja2Ryb3AsXG4udWItZW1iLW92ZXJsYXkudWItZW1iLXZpc2libGUgLnViLWVtYi1zY3JvbGwtd3JhcHBlciB7XG4gIG9wYWNpdHk6IDE7XG4gIHRyYW5zaXRpb246IG9wYWNpdHkgJG92ZXJsYXlGYWRlSW5TcGVlZCAkb3ZlcmxheUZhZGVUcmFuc2l0aW9uRm47XG5cbiAgLyogVGhpcyBpcyBzZXQgMSBoaWdoZXIgdGhhbiBzdGlja3kgYmFycyAqL1xuICB6LWluZGV4OiAyMTQ3NDgzNjQ3O1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.ub-emb-bar{transition:visibility .2s step-end;visibility:hidden}.ub-emb-bar.ub-emb-visible{transition:none;visibility:visible}.ub-emb-bar .ub-emb-bar-frame{left:0;position:fixed;right:0;text-align:center;transition:bottom .2s ease-in-out,top .2s ease-in-out,z-index .2s step-end;z-index:-1}.ub-emb-bar.ub-emb-ios .ub-emb-bar-frame{right:auto;width:100%}.ub-emb-bar.ub-emb-visible .ub-emb-bar-frame{transition:bottom .3s ease-in-out,top .3s ease-in-out;z-index:2147483646}.ub-emb-bar .ub-emb-close{bottom:0;margin:auto 0;top:0}.ub-emb-bar:not(.ub-emb-mobile) .ub-emb-close{right:20px}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL1N0aWNreUJhci5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsWUFDRSxrQ0FBdUQsQ0FDdkQsaUJBQ0YsQ0FFQSwyQkFDRSxlQUFnQixDQUNoQixrQkFDRixDQUVBLDhCQUNFLE1BQU8sQ0FDUCxjQUFlLENBQ2YsT0FBUSxDQUNSLGlCQUFrQixDQUNsQiwwRUFHMEMsQ0FDMUMsVUFDRixDQUVBLHlDQUNFLFVBQVcsQ0FDWCxVQUlGLENBRUEsNkNBQ0UscURBRXdELENBR3hELGtCQUNGLENBRUEsMEJBQ0UsUUFBUyxDQUNULGFBQWMsQ0FDZCxLQUNGLENBRUEsOENBQ0UsVUFDRiIsInNvdXJjZXNDb250ZW50IjpbIi51Yi1lbWItYmFyIHtcbiAgdHJhbnNpdGlvbjogdmlzaWJpbGl0eSAkc3RpY2t5QmFyU2xpZGVPdXRTcGVlZCBzdGVwLWVuZDtcbiAgdmlzaWJpbGl0eTogaGlkZGVuO1xufVxuXG4udWItZW1iLWJhci51Yi1lbWItdmlzaWJsZSB7XG4gIHRyYW5zaXRpb246IG5vbmU7XG4gIHZpc2liaWxpdHk6IHZpc2libGU7XG59XG5cbi51Yi1lbWItYmFyIC51Yi1lbWItYmFyLWZyYW1lIHtcbiAgbGVmdDogMDtcbiAgcG9zaXRpb246IGZpeGVkO1xuICByaWdodDogMDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB0cmFuc2l0aW9uOlxuICAgIGJvdHRvbSAkc3RpY2t5QmFyU2xpZGVPdXRTcGVlZCAkc3RpY2t5QmFyU2xpZGVUcmFuc2l0aW9uRm4sXG4gICAgdG9wICRzdGlja3lCYXJTbGlkZU91dFNwZWVkICRzdGlja3lCYXJTbGlkZVRyYW5zaXRpb25GbixcbiAgICB6LWluZGV4ICRzdGlja3lCYXJTbGlkZU91dFNwZWVkIHN0ZXAtZW5kO1xuICB6LWluZGV4OiAtMTtcbn1cblxuLnViLWVtYi1iYXIudWItZW1iLWlvcyAudWItZW1iLWJhci1mcmFtZSB7XG4gIHJpZ2h0OiBhdXRvO1xuICB3aWR0aDogMTAwJTtcblxuICAvKiBgcmlnaHQ6MGAgY2F1c2VzIHNjcm9sbCB1cCBqYW5rIGluIExQcyBvbiBpT1MxMCwgd2hlcmVhcyAxMDB2dyBkb2Vzbid0IChzZWUgc2Nyb2xsLXVwLmh0bWwpLlxuICAgICBPdXRzaWRlIG9mIGlPUywgd2Ugd2FudCB0byBhdm9pZCAxMDB2dywgYmVjYXVzZSBpdCBpbmNsdWRlcyB0aGUgd2lkdGggb2YgdGhlIHNjcm9sbGJhci4gKi9cbn1cblxuLnViLWVtYi1iYXIudWItZW1iLXZpc2libGUgLnViLWVtYi1iYXItZnJhbWUge1xuICB0cmFuc2l0aW9uOlxuICAgIGJvdHRvbSAkc3RpY2t5QmFyU2xpZGVJblNwZWVkICRzdGlja3lCYXJTbGlkZVRyYW5zaXRpb25GbixcbiAgICB0b3AgJHN0aWNreUJhclNsaWRlSW5TcGVlZCAkc3RpY2t5QmFyU2xpZGVUcmFuc2l0aW9uRm47XG5cbiAgLyogVGhpcyBpcyBzZXQgMSBsb3dlciB0aGFuIG92ZXJsYXlzICovXG4gIHotaW5kZXg6IDIxNDc0ODM2NDY7XG59XG5cbi51Yi1lbWItYmFyIC51Yi1lbWItY2xvc2Uge1xuICBib3R0b206IDA7XG4gIG1hcmdpbjogYXV0byAwO1xuICB0b3A6IDA7XG59XG5cbi51Yi1lbWItYmFyOm5vdCgudWItZW1iLW1vYmlsZSkgLnViLWVtYi1jbG9zZSB7XG4gIHJpZ2h0OiAyMHB4O1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><link type="text/css" rel="stylesheet" href="./NUCLEO-F401RE _ Mbed_files/1.css"></head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6FZ495&gtm_auth=3a8Vwkp5SsDiYq6tYR1ObQ&gtm_preview=env-6&gtm_cookies_win=x"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    
+
+
+
+
+
+
+
+
+<div class="mbed-nav">
+    <div class="mbed-nav__mobile-menu-control">
+        <i class="mbed-nav__mobile-menu-control-open fas fa-bars fa-fw"></i>
+        <i class="mbed-nav__mobile-menu-control-close fas fa-times is-hidden fa-fw"></i>
+        <i class="mbed-nav__mobile-menu-control-back fas fa-angle-left is-hidden fa-fw"></i>
+    </div>
+    <div class="mbed-nav__logo">
+        <a href="https://os.mbed.com/">
+            <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#logo"></use></svg>
+        </a>
+    </div>
+    <div class="mbed-nav__menu">
+
+        <!-- Main menu -->
+        <nav class="mbed-nav__main-menu">
+            <ul class="mbed-nav__dropdown-menu">
+                <li class="has-dropdown">
+                    Overview
+
+                    <div class="mbed-nav__dropdown-menu-content">
+
+                        <!-- Overview dropdown menu -->
+                        <div class="mbed-nav__overview-menu">
+                            <section>
+                                <p>Operating system</p>
+                                <ul>
+                                    <li>
+                                        <a href="https://os.mbed.com/mbed-os/" class="mbed-nav__icon-link-detail">
+                                            <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#mbed_os"></use></svg>
+                                            <div>
+                                                <p>Mbed OS</p>
+                                                <p>The open source OS for Cortex-M devices</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <p>Development tools</p>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.keil.arm.com/mbed/?utm_source=mbed_com&amp;utm_medium=compiler_button&amp;utm_campaign=mbed_com_promo" class="mbed-nav__icon-link-detail">
+                                             <svg><use href="/static/img/keil_studio_icon.2c56c28014c6.svg?#keil_studio_icon"></use></svg>
+                                            <div>
+                                                <p>Keil Studio Cloud</p>
+                                                <p>Arm's IDE for IoT, embedded and Mbed development</p>
+                                            </div>
+                                         </a>
+                                     </li>
+                                    <li>
+                                        <a href="https://os.mbed.com/studio/" class="mbed-nav__icon-link-detail">
+                                            <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#mbed_studio"></use></svg>
+                                            <div>
+                                                <p>Mbed Studio</p>
+                                                <p>Download the desktop IDE for Mbed OS</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://os.mbed.com/docs/mbed-os/latest/quick-start/offline-with-mbed-cli.html" class="mbed-nav__icon-link-detail">
+
+                                            <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#mbed_cli"></use></svg>
+                                            <div>
+                                               <p>Mbed CLI</p>
+                                               <p>Command line access to Mbed tools and services</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <p>Security and Connectivity</p>
+                                <ul>
+                                    <li>
+                                        <a href="https://tls.mbed.org/" class="mbed-nav__icon-link-detail">
+                                            <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#mbed_tls_crypto"></use></svg>
+                                            <div>
+                                                <p>Mbed TLS and Mbed Crypto</p>
+                                                <p>Industry standard TLS stack and crypto library</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://os.mbed.com/connectivity-technologies/" class="mbed-nav__icon-link-detail">
+                                            <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#connectivity"></use></svg>
+                                            <div>
+                                                <p>Connectivity</p>
+                                                <p>BLE, WiFi, Cellular, LoRaWAN and more</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </li>
+                <li class="has-dropdown">
+                    Hardware
+
+                    <!-- Hardware dropdown menu -->
+                    <div class="mbed-nav__dropdown-menu-content">
+                        <div class="mbed-nav__hardware-dropdown">
+                            <ul class="mbed-nav__hardware-menu">
+                                <li>
+                                    <a href="https://os.mbed.com/platforms/" class="mbed-nav__icon-link-detail">
+                                        <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#boards"></use></svg>
+                                        <div>
+                                            <p>Boards</p>
+                                            <p>Build your Mbed projects with development boards for Arm Cortex processors and MCUs</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://os.mbed.com/modules/" class="mbed-nav__icon-link-detail">
+                                        <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#modules"></use></svg>
+                                        <div>
+                                            <p>Modules</p>
+                                            <p>Modules include a MCU, connectivity and onboard memory, making them ideal for designing IoT products for mass production</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://os.mbed.com/components/" class="mbed-nav__icon-link-detail">
+                                        <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#components"></use></svg>
+                                        <div>
+                                            <p>Components</p>
+                                            <p>The component database hosts libraries for different sensors, actuators, radios, inputs, middleware and IoT services</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://os.mbed.com/hardware/" class="mbed-nav__icon-link-detail">
+                                        <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#hardware_overview"></use></svg>
+                                        <div>
+                                            <p>Hardware overview &amp; Mbed Enabled</p>
+                                            <p>Learn about hardware support for Mbed, as well as the Mbed Enabled program, which identifies Mbed compatible products</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://os.mbed.com/docs/mbed-os/latest/porting/arm-mbed-hdk.html" class="mbed-nav__icon-link-detail">
+                                        <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#mbed_hdk"></use></svg>
+                                        <div>
+                                            <p>Mbed HDK</p>
+                                            <p>Reference designs, schematics and board layouts to develop production hardware and Mbed-compatible development boards</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </li>
+                <li><a href="https://os.mbed.com/code/">Code</a></li>
+                <li class="has-dropdown">
+                    Documentation
+
+                    <!-- Documentation dropdown menu -->
+                    <div class="mbed-nav__dropdown-menu-content">
+                        <div class="mbed-nav__documentation-dropdown">
+                            <ul class="mbed-nav__documentation-menu">
+                                <li>
+                                    <a href="https://os.mbed.com/docs/mbed-os/">Mbed OS</a>
+                                </li>
+                                <li>
+                                    <a href="https://developer.arm.com/documentation/102497/latest/Arm-Keil-Studio-Cloud">
+                                        Keil Studio
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://os.mbed.com/docs/mbed-studio/">Mbed Studio</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="https://os.mbed.com/built-with-mbed/">Case studies</a></li>
+                <li class="has-dropdown">
+                    Community
+
+                    <!-- Community dropdown menu -->
+                    <div class="mbed-nav__dropdown-menu-content">
+                        <div class="mbed-nav__community-dropdown">
+                            <ul class="mbed-nav__community-menu">
+                                <li>
+                                    <a href="https://forums.mbed.com/">Forum</a>
+                                </li>
+                                <li>
+                                    <a href="https://os.mbed.com/docs/mbed-os/latest/contributing/index.html">Contribute</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/playlist?list=PLKjl7IFAwc4R4plIZe4IuHlsn8zW7rvKh">Mbed OS Tech Forum</a>
+                                </li>
+                                <li>
+                                    <a href="https://os.mbed.com/support/">Report a problem</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="https://os.mbed.com/blog/">Blog</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="mbed-nav__user-controls">
+        <div class="mbed-nav__user-controls-top">
+            <div class="mbed-nav__search">
+                <form id="mbed-nav__search-box" class="is-hidden" action="https://os.mbed.com/search" method="GET">
+                    <div class="mbed-nav__search-box">
+                        <input type="search" name="q" placeholder="Search...">
+                        <button type="submit">
+                            <svg class="stroke-white"><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#search"></use></svg>
+                        </button>
+                    </div>
+                </form>
+                <i class="mbed-nav__search-close fas fa-times is-hidden"></i>
+                <svg class="mbed-nav__search-open stroke-white"><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#search"></use></svg>
+            </div>
+            <a class="mbed-nav__cta" href="https://studio.keil.arm.com/mbed" target="_blank">
+                Keil Studio Cloud
+            </a>
+
+            
+                
+                <nav class="mbed-nav__logged-out-nav">
+                    <ul class="mbed-nav__dropdown-menu">
+                        <li>
+                            <svg class="stroke-white"><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#profile"></use></svg>
+
+                            <!-- Logged out dropdown menu -->
+                            <div class="mbed-nav__dropdown-menu-content">
+                                <div class="mbed-nav__logged-out-dropdown">
+                                    <ul class="mbed-nav__logged-out-menu">
+                                        <li><a href="https://os.mbed.com/account/login/?next=/platforms/ST-Nucleo-F401RE/">Log in or Sign up</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                
+            
+        </div>
+    </div>
+    <div class="mbed-nav__spacer"></div>
+</div>
+<div class="mbed-nav__mobile-menu-cover is-hidden">
+    <div class="mbed-nav__mobile-menu">
+
+        <div id="mbed-nav__main-menu-mobile">
+            <div class="mbed-nav__user-controls-mobile">
+                <div class="mbed-nav__user-controls-top-mobile">
+                    <form action="https://os.mbed.com/search" method="GET">
+                        <div class="mbed-nav__search-box mbed-nav__search-box--light">
+                            <input type="search" name="q" placeholder="Search...">
+                            <button type="submit">
+                                <svg class="stroke-dark-grey"><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#search"></use></svg>
+                            </button>
+                        </div>
+                    </form>
+                    
+                        
+                        <a href="https://os.mbed.com/account/login/?next=/platforms/ST-Nucleo-F401RE/">Log in or Sign up</a>
+                        
+                    
+                </div>
+            </div>
+
+            <ul class="mbed-nav__side-menu">
+                <li>
+                    <input type="checkbox" name="accordion-toggle" id="overview-accordion">
+                    <label for="overview-accordion">Overview</label>
+                    <div class="accordion_content">
+                        <ul class="overview-menu-mobile">
+                            <li>
+                                <p>Operating system</p>
+                                <ul>
+                                    <li>
+                                        <a href="https://os.mbed.com/mbed-os/" class="mbed-nav__icon-link">
+                                            <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#mbed_os"></use></svg>
+                                            <p>Mbed OS</p>
+                                        </a>
+                                    </li>
+                                    
+
+                                </ul>
+                            </li>
+                            <li>
+                                <p>Development tools</p>
+                                <ul>
+                                    <li>
+                                        <a href="https://os.mbed.com/studio/" class="mbed-nav__icon-link">
+                                            <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#mbed_studio"></use></svg>
+                                            <p>Mbed Studio</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.keil.arm.com/mbed/?utm_source=mbed_com&amp;utm_medium=compiler_button&amp;utm_campaign=mbed_com_promo" class="mbed-nav__icon-link">
+                                             <svg><use href="/static/img/keil_studio_icon.2c56c28014c6.svg?#keil_studio_icon"></use></svg>
+                                            <p>Keil Studio</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://os.mbed.com/docs/mbed-os/latest/quick-start/offline-with-mbed-cli.html" class="mbed-nav__icon-link">
+                                            <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#mbed_cli"></use></svg>
+                                            <p>Mbed CLI</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>Security and connectivity</p>
+                                <ul>
+                                    <li>
+                                        <a href="https://tls.mbed.org/" class="mbed-nav__icon-link">
+                                            <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#mbed_tls_crypto"></use></svg>
+                                            <p>Mbed TLS and Mbed Crypto</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://os.mbed.com/connectivity-technologies/" class="mbed-nav__icon-link">
+                                            <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#connectivity"></use></svg>
+                                            <p>Connectivity</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" name="accordion-toggle" id="hardware-accordion">
+                    <label for="hardware-accordion">Hardware</label>
+                    <div class="accordion_content">
+                        <ul>
+                            <li>
+                                <a href="https://os.mbed.com/platforms/" class="mbed-nav__icon-link">
+                                    <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#boards"></use></svg>
+                                    <p>Boards</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://os.mbed.com/modules/" class="mbed-nav__icon-link">
+                                    <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#modules"></use></svg>
+                                    <p>Modules</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://os.mbed.com/components/" class="mbed-nav__icon-link">
+                                    <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#components"></use></svg>
+                                    <p>Components</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://os.mbed.com/hardware/" class="mbed-nav__icon-link">
+                                    <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#hardware_overview"></use></svg>
+                                    <p>Hardware overview &amp; Mbed Enabled</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://os.mbed.com/docs/mbed-os/latest/porting/arm-mbed-hdk.html" class="mbed-nav__icon-link">
+                                    <svg><use xlink:href="/static/img/mbed_nav_spritesheet.8ac20221a123.svg?v3#mbed_hdk"></use></svg>
+                                    <p>Mbed HDK</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="https://os.mbed.com/code/">Code</a></li>
+                <li>
+                    <input type="checkbox" name="accordion-toggle" id="documentation-accordion">
+                    <label for="documentation-accordion">Documentation</label>
+                    <div class="accordion_content">
+                        <ul>
+                            <li><a href="https://os.mbed.com/docs/mbed-os/">Mbed OS</a></li>
+                            <li><a href="https://os.mbed.com/docs/mbed-studio/">Mbed Studio</a></li>
+                            <li>
+                              <a href="https://developer.arm.com/documentation/102497/1-5/Arm-Keil-Studio/?utm_source=mbed_com&amp;utm_medium=nav_docs_link&amp;utm_campaign=mbed_com_promo">
+                                Keil Studio
+                              </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="https://os.mbed.com/built-with-mbed/">Case studies</a></li>
+                <li>
+                    <input type="checkbox" name="accordion-toggle" id="community-accordion">
+                    <label for="community-accordion">Community</label>
+                    <div class="accordion_content">
+                        <ul>
+                            <li><a href="https://forums.mbed.com/">Forum</a></li>
+                            <li><a href="https://os.mbed.com/docs/mbed-os/latest/contributing/index.html">Contribute</a></li>
+                            <li><a href="https://www.youtube.com/playlist?list=PLKjl7IFAwc4R4plIZe4IuHlsn8zW7rvKh">Mbed OS Tech Forum</a></li>
+                            <li><a href="https://os.mbed.com/support/">Report a problem</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="https://os.mbed.com/blog/">Blog</a></li>
+            </ul>
+        </div>
+
+        
+    </div>
+</div>
+
+
+
+    <div id="main-content">
+        
+
+        
+
+        
+
+        
+            
+<div class="banner warning" data-dismissable="" data-dismissable-id="mbed_deprecation_july_2024">
+  <div class="banner-row">
+    <button class="dismiss-button fas fa-times"></button>
+    
+ <p>
+	 <i class="fas fa-bullhorn" aria-hidden="true"></i>
+     <strong>Important update:</strong> Arm Announces End of Life Timeline for Mbed. This site will be archived in July 2026.
+	 <a href="https://os.mbed.com/blog/entry/Important-Update-on-Mbed/" target="_blank">
+		 <strong>Read the full announcement</strong>.
+	 </a>
+ </p>
+
+  </div>
+</div>
+
+
+        
+
+        
+            
+
+        
+
+        
+        <div>
+            <div class="row" id="top">
+                <div class="six columns">
+                    <div class="breadcrumbs">
+                        
+    <a href="https://os.mbed.com/platforms/">Boards</a> »
+    NUCLEO-F401RE
+
+
+                    </div>
+                </div>
+                <div class="six columns header search-block">
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+
+        
+<div class="row">
+    <div class="nine columns main-content" id="mbed-content">
+        
+
+    <div class="content-actions hide-on-print">
+        
+    </div>
+
+    <h1>NUCLEO-F401RE</h1>
+
+    <p>Affordable and flexible platform to ease prototyping using a STM32F401RET6 microcontroller.</p>
+
+    
+        <img src="./NUCLEO-F401RE _ Mbed_files/Nucleo64_perf_nologo_1024.jpg.250x250_q85.jpg" width="250" height="250" style="margin-left: auto; margin-right: auto; display: block;">
+
+    <p>
+        </p><div class="flashbox finfo action-bar"><h4>Table of Contents</h4><ol><li><a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#overview">Overview</a></li><li><a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#microcontroller-features">Microcontroller features</a></li><li><a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#board-features">Board features</a></li><li><a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#board-pinout">Board pinout</a></li><li><a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#supported-shields">Supported shields</a></li><li><a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#getting-started">Getting started</a></li><li><a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#technical-references">Technical references</a></li><li><a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#known-limitations">Known limitations</a></li><li><a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#tips-and-tricks">Tips and Tricks</a></li></ol></div><h2 id="overview">Overview<a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#overview" class="wiki_permalink" title="Permalink to this heading">¶</a></h2>
+<p>The STM32 Nucleo board provides an affordable and flexible way for users to try out new ideas and build prototypes with any STM32 microcontroller line, choosing from the various combinations of performance, power consumption and features.</p>
+<p>The Arduino™ connectivity support and ST Morpho headers make it easy to expand the
+functionality of the STM32 Nucleo open development platform with a wide choice of
+specialized shields.</p>
+<p>The STM32 Nucleo board does not require any separate probe as it integrates the ST-LINK/V2-1 debugger/programmer. </p>
+<div class="flex-video"><iframe src="./NUCLEO-F401RE _ Mbed_files/FntTelSoqSk&amp;index.html" frameborder="0" allowfullscreen="allowfullscreen" width="420" height="315"></iframe></div>
+<p><br></p>
+<h2 id="microcontroller-features">Microcontroller features<a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#microcontroller-features" class="wiki_permalink" title="Permalink to this heading">¶</a></h2>
+<ul><li>STM32F401RET6 in LQFP64 package
+</li><li>ARM®32-bit Cortex®-M4 CPU with FPU
+</li><li>84 MHz max CPU frequency
+</li><li>VDD from 1.7 V to 3.6 V
+</li><li>512 KB Flash
+</li><li>96 KB SRAM
+</li><li>GPIO (50) with external interrupt capability
+</li><li>12-bit ADC with 16 channels
+</li><li>RTC
+</li><li>Advanced-control Timer
+</li><li>General Purpose Timers (7)
+</li><li>Watchdog Timers (2)
+</li><li>USART/UART (4)
+</li><li>I2C (3)
+</li><li>SPI (3)
+</li><li>SDIO
+</li><li>USB 2.0 OTG FS
+</li></ul>
+<p><br></p>
+<h2 id="board-features">Board features<a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#board-features" class="wiki_permalink" title="Permalink to this heading">¶</a></h2>
+<ul><li>Two types of extension resources
+<ul><li>Arduino Uno Revision 3 connectivity
+</li><li>STMicroelectronics Morpho extension pin headers for full access to all STM32 I/Os
+</li></ul></li><li>On-board ST-LINK/V2-1 debugger/programmer with SWD connector
+<ul><li>Selection-mode switch to use the kit as a standalone ST-LINK/V2-1
+</li></ul></li><li>Flexible board power supply
+<ul><li>USB VBUS or external source (3.3 V, 5 V, 7 - 12 V)
+</li><li>Power management access point
+</li></ul></li><li>User LED (LD2)
+</li><li>Two push buttons: USER and RESET
+</li><li>USB re-enumeration capability: three different interfaces supported on USB
+<ul><li>Virtual Com port
+</li><li>Mass storage (USB Disk drive) for drag'n'drop programming
+</li><li>Debug port
+</li></ul></li></ul>
+<p><br></p>
+<h2 id="board-pinout">Board pinout<a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#board-pinout" class="wiki_permalink" title="Permalink to this heading">¶</a></h2>
+<p><br></p>
+<h3 id="pins-legend">Pins Legend<a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#pins-legend" class="wiki_permalink" title="Permalink to this heading">¶</a></h3>
+<p> <img src="./NUCLEO-F401RE _ Mbed_files/pinout_legend_2017-06-28-2.png" alt="/media/uploads/bcostm/pinout_legend_2017-06-28-2.png" title="/media/uploads/bcostm/pinout_legend_2017-06-28-2.png"> </p>
+<p>You can find more details on the available pins and labels in the <strong>PeripheralPins.c</strong> and <strong>PinNames.h</strong> files. </p>
+<p>These files can be found in:</p>
+<ul><li>ARMmbed/mbed-os repository on GitHub (<strong>up-to-date</strong> version, used with <strong>mbed CLI commands</strong>)
+</li></ul>
+<p><a href="https://github.com/ARMmbed/mbed-os/blob/master/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/TARGET_NUCLEO_F401RE/" rel="nofollow">https://github.com/ARMmbed/mbed-os/blob/master/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/TARGET_NUCLEO_F401RE/</a></p>
+<ul><li>mbed-dev library in developer.mbed.org (source files of the mbed library used on <strong>mbed compiler IDE</strong>)
+</li></ul>
+<p><a href="https://developer.mbed.org/users/mbed_official/code/mbed-dev/file/default/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/TARGET_NUCLEO_F401RE/">https://developer.mbed.org/users/mbed_official/code/mbed-dev/file/default/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/TARGET_NUCLEO_F401RE/</a></p>
+<h3 id="arduino-compatible-headers">Arduino-compatible headers<a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#arduino-compatible-headers" class="wiki_permalink" title="Permalink to this heading">¶</a></h3>
+<p> <img src="./NUCLEO-F401RE _ Mbed_files/nucleo_f401re_2017_9_19_arduino_left.png" alt="/media/uploads/bcostm/nucleo_f401re_2017_9_19_arduino_left.png" title="/media/uploads/bcostm/nucleo_f401re_2017_9_19_arduino_left.png"> 
+ <img src="./NUCLEO-F401RE _ Mbed_files/nucleo_f401re_2017_9_19_arduino_right.png" alt="/media/uploads/bcostm/nucleo_f401re_2017_9_19_arduino_right.png" title="/media/uploads/bcostm/nucleo_f401re_2017_9_19_arduino_right.png"> </p>
+<h3 id="morpho-headers">Morpho headers<a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#morpho-headers" class="wiki_permalink" title="Permalink to this heading">¶</a></h3>
+<p> These headers give access to all STM32 pins.
+ <img src="./NUCLEO-F401RE _ Mbed_files/nucleo_f401re_2017_9_19_morpho_left.png" alt="/media/uploads/bcostm/nucleo_f401re_2017_9_19_morpho_left.png" title="/media/uploads/bcostm/nucleo_f401re_2017_9_19_morpho_left.png"> 
+ <img src="./NUCLEO-F401RE _ Mbed_files/nucleo_f401re_2017_9_19_morpho_right.png" alt="/media/uploads/bcostm/nucleo_f401re_2017_9_19_morpho_right.png" title="/media/uploads/bcostm/nucleo_f401re_2017_9_19_morpho_right.png"> </p>
+<p><br></p>
+<h2 id="supported-shields">Supported shields<a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#supported-shields" class="wiki_permalink" title="Permalink to this heading">¶</a></h2>
+<h3 id="st-x-nucleo-boards">ST X-NUCLEO boards<a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#st-x-nucleo-boards" class="wiki_permalink" title="Permalink to this heading">¶</a></h3>
+<p>See <a href="https://developer.mbed.org/teams/ST/wiki/Matrix-of-tested-boards">Matrix of tested boards</a>.</p>
+<h3 id="other-non-st-boards">Other Non-ST boards<a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#other-non-st-boards" class="wiki_permalink" title="Permalink to this heading">¶</a></h3>
+<p>See <a href="https://developer.mbed.org/teams/ST/wiki/Supported-shields">here</a>.</p>
+<p><br></p>
+<h2 id="getting-started">Getting started<a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#getting-started" class="wiki_permalink" title="Permalink to this heading">¶</a></h2>
+<p>This video shows how to get started with ARM mbed Integrated Development Environment using STM32 Nucleo platform:</p>
+<div class="flex-video"><iframe src="./NUCLEO-F401RE _ Mbed_files/BrMw5TNQROo&amp;list.html" frameborder="0" allowfullscreen="allowfullscreen" width="420" height="315"></iframe></div>
+<p><br></p>
+<div class="flashbox fwarning"><h4 class="ftitle">Nucleo ST-LINK/V2 driver installation and firmware upgrade</h4><ul><li>Install the ST-LINK/V2 driver before connecting the Nucleo board to your PC the first time. Follow this <strong> <a href="https://os.mbed.com/teams/ST/wiki/ST-Link-Driver">LINK</a> </strong> for all details.
+</li><li>For optimum performances, ensure that the Nucleo ST-LINK/V2 firmware is upgraded to the latest version. Follow this <strong> <a href="https://os.mbed.com/teams/ST/wiki/Nucleo-Firmware">LINK</a> </strong> for all details. 
+</li></ul>
+</div><p><br></p>
+<h2 id="technical-references">Technical references<a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#technical-references" class="wiki_permalink" title="Permalink to this heading">¶</a></h2>
+<p>For more information, please refer to:</p>
+<ul><li><a href="http://www.st.com/web/catalog/mmc/FM141/SC1169/SS1577/LN1810/PF258797" rel="nofollow">STM32F401RE microcontroller</a>
+</li><li><a href="http://www.st.com/stm32nucleo" rel="nofollow">Nucleo board</a>
+</li><li><a href="https://os.mbed.com/teams/ST/wiki/SDK-changes-log">SDK changes log</a>
+</li></ul>
+<p><br></p>
+<h2 id="known-limitations">Known limitations<a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#known-limitations" class="wiki_permalink" title="Permalink to this heading">¶</a></h2>
+<p>The following section describes known limitations of the platform. Note that general issues are tracked into the <a href="https://github.com/mbedmicro/mbed" rel="nofollow">mbed repository</a> available on GitHub.</p>
+<ul><li>On Nucleo 64-pins boards, the D0 and D1 pins are not available per default as they are used by the STLink Virtual Comm Port. More information <a href="https://os.mbed.com/teams/ST/wiki/Use-of-D0D1-Arduino-pins" rel="nofollow">HERE</a>
+</li></ul>
+<p><br></p>
+<h2 id="tips-and-tricks">Tips and Tricks<a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#tips-and-tricks" class="wiki_permalink" title="Permalink to this heading">¶</a></h2>
+<p>Find more information in <a href="https://os.mbed.com/teams/ST/wiki/Special:Allpages" rel="nofollow">ST WIKI pages</a>.</p>
+
+    <p></p>
+
+    
+        
+        <p align="center">
+        <a class="button " href="https://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-nucleo/nucleo-f401re.html#samplebuy-scroll"><i class="fas fa-shopping-cart" aria-hidden="true"></i>&nbsp;Buy Now</a>
+        </p>
+        
+        <br>
+   
+
+    
+
+    
+
+
+
+
+
+<div id="component-discussions">
+    <div class="component-community panel">
+        
+            
+                
+    <p> You need to <a href="https://os.mbed.com/account/login/?next=/platforms/ST-Nucleo-F401RE/">log in</a> to post a discussion </p>
+
+            
+            
+                
+                <h2><a name="discussions" href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#discussions">Discussion topics</a></h2>
+                
+
+
+    
+
+
+
+    <table class="responsive styledtable" width="100%">
+        <tbody><tr><th>Topic</th><th>Replies</th><th>Last post</th></tr>
+        
+
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=sevenSegmant_stopwatch&amp;type=Forum">sevenSegmant_stopwatch</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/35609/">sevenSegmant_stopwatch</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    0
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/62337/"><abbr class="timeago" title="18 Apr 2019">18 Apr 2019</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/yarikgricev/">Yarik Gricev</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=encoders&amp;type=Forum">encoders</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=F401RE&amp;type=Forum">F401RE</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=Nucleo&amp;type=Forum">Nucleo</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=quadrature&amp;type=Forum">quadrature</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/4963/">Nucleo F401RE and Quadrature encoders</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    30
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/59786/"><abbr class="timeago" title="20 Oct 2018">20 Oct 2018</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/scaramacai/">MAINO MARIO</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=Missing&amp;type=Forum">Missing</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=problem&amp;type=Forum">problem</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=SERIAL_RX&amp;type=Forum">SERIAL_RX</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=SERIAL_TX&amp;type=Forum">SERIAL_TX</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/28248/">SERIAL_TX SERIAL_RX: not recieving data from STM32F401</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    0
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/53624/"><abbr class="timeago" title="04 Nov 2017">04 Nov 2017</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/mapi20th/">Maria Chavez</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=I2C%20slave&amp;type=Forum">I2C slave</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=NuCleo-F401RE&amp;type=Forum">NuCleo-F401RE</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=OS-5&amp;type=Forum">OS-5</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/26679/">NUCLEO-F401RE I2C slave problem</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    15
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/52936/"><abbr class="timeago" title="23 Jun 2017">23 Jun 2017</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/bus710/">bus710 .</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=F401RE&amp;type=Forum">F401RE</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=firmware&amp;type=Forum">firmware</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=Nucleo&amp;type=Forum">Nucleo</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/5267/">nucleo firmware update problem</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    1
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/52535/"><abbr class="timeago" title="07 Apr 2017">07 Apr 2017</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/Cipulot/">Luca Sevà</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=linux&amp;type=Forum">linux</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=Nucleo&amp;type=Forum">Nucleo</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/5095/">Flashing and running STM Nucleo board in Linux</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    3
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/51344/"><abbr class="timeago" title="11 Oct 2016">11 Oct 2016</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/robin48gx/">Robin Clark</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/26770/">HID reading doesn't work - nucleo STM32F401RE</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    0
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/51061/"><abbr class="timeago" title="22 Sep 2016">22 Sep 2016</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/dani_neuro/">Daniel Sierra</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=NuCleo-F401RE&amp;type=Forum">NuCleo-F401RE</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=OS-5&amp;type=Forum">OS-5</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=SPI&amp;type=Forum">SPI</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/26695/">NUCLEO-F401RE SPI API problem</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    0
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/50917/"><abbr class="timeago" title="29 Aug 2016">29 Aug 2016</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/jingxizhang/">Jingxi Zhang</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=mRotaryEncoder&amp;type=Forum">mRotaryEncoder</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=NuCleo-F401RE&amp;type=Forum">NuCleo-F401RE</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=rotary&amp;type=Forum">rotary</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/26349/">Nucleo F401RE and rotary encoders</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    0
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/50361/"><abbr class="timeago" title="01 Jul 2016">01 Jul 2016</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/bbalazs/">Balazs Bornyasz</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/25968/">How to get unique ID</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    1
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/49753/"><abbr class="timeago" title="11 Mar 2016">11 Mar 2016</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/joeata2wh/">Joseph Ellsworth</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/17186/">F401RE out of reset time vs F103</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    2
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/40243/"><abbr class="timeago" title="15 Nov 2015">15 Nov 2015</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/sixBase3/">Bill Bellis</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=encoders&amp;type=Forum">encoders</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=F401RE&amp;type=Forum">F401RE</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=Nucleo&amp;type=Forum">Nucleo</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=quadrature&amp;type=Forum">quadrature</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/4964/">Nucleo F401RE and Quadrature encoders</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    3
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/26961/"><abbr class="timeago" title="17 Jan 2015">17 Jan 2015</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/misan/">Miguel Sánchez</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/4803/">Offline compile &amp; debug</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    9
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/26902/"><abbr class="timeago" title="13 Jan 2015">13 Jan 2015</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/lucaim777/">Lukasz Buczynski</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=MBED.HTM&amp;type=Forum">MBED.HTM</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/5358/">HTTP ERROR</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    2
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/26446/"><abbr class="timeago" title="14 Dec 2014">14 Dec 2014</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/enricotaormina/">enrico taormina</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=CoIDE&amp;type=Forum">CoIDE</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=F401RE&amp;type=Forum">F401RE</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=offline&amp;type=Forum">offline</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/4855/">CoIDE mbed offline compile F401RE</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    11
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/25940/"><abbr class="timeago" title="13 Nov 2014">13 Nov 2014</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/miguelmoreto/">Miguel Moreto</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=Nucleo&amp;type=Forum">Nucleo</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=Ticker&amp;type=Forum">Ticker</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/5206/">Weird Ticker Behavior Inside Class</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    1
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/25561/"><abbr class="timeago" title="11 Oct 2014">11 Oct 2014</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/abotics/">Abraham Howell</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/4770/">ST Mbed status - betta !</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    16
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/25464/"><abbr class="timeago" title="02 Oct 2014">02 Oct 2014</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/ctasdemir/">C T</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=I2C&amp;type=Forum">I2C</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=Nucleo&amp;type=Forum">Nucleo</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/4921/">Repeated Start of I2C does not work.</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    3
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/25089/"><abbr class="timeago" title="03 Aug 2014">03 Aug 2014</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/jtdyal007/">John Dyal</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=F401RE&amp;type=Forum">F401RE</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=Nucleo&amp;type=Forum">Nucleo</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=robot&amp;type=Forum">robot</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=STEM&amp;type=Forum">STEM</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/5036/">Unique Fully Open Source Educational Robot - Apeiros</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    2
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/24961/"><abbr class="timeago" title="14 Jul 2014">14 Jul 2014</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/Roon_van_Boh/">Sergey Kordubin</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=Nucleo&amp;type=Forum">Nucleo</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=robot&amp;type=Forum">robot</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/4858/">Nucleo Robot</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    12
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/24950/"><abbr class="timeago" title="10 Jul 2014">10 Jul 2014</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/Roon_van_Boh/">Sergey Kordubin</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/4774/">Speed up the board to 84MHz</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    13
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/24844/"><abbr class="timeago" title="27 Jun 2014">27 Jun 2014</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/clive1/">Clive Turvey</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=Nucleo&amp;type=Forum">Nucleo</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=Serial&amp;type=Forum">Serial</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/4949/">Serial pc(SERIAL_TX,SERIAL_RX) problem.</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    8
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/24785/"><abbr class="timeago" title="20 Jun 2014">20 Jun 2014</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/wim/">Wim Huiskamp</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=F401RE&amp;type=Forum">F401RE</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=Nucleo&amp;type=Forum">Nucleo</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/4983/">Bad experience with the Nucleo F4</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    11
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/24728/"><abbr class="timeago" title="13 Jun 2014">13 Jun 2014</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/wim/">Wim Huiskamp</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=Pin&amp;type=Forum">Pin</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=pinmap&amp;type=Forum">pinmap</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/4800/">Nucleo Pinmap to Micro Pinout Diagram</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    12
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/24544/"><abbr class="timeago" title="25 May 2014">25 May 2014</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/bcostm/">bco stm</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=Nucleo&amp;type=Forum">Nucleo</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/4945/">Upload with new version NOT WORKING !!!!</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    0
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/24528/"><abbr class="timeago" title="22 May 2014">22 May 2014</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/Romik/">Roman Kuzmin</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=F401RE&amp;type=Forum">F401RE</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=Nucleo&amp;type=Forum">Nucleo</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=ST&amp;type=Forum">ST</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/4749/">Crash oh upload</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    7
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/24439/"><abbr class="timeago" title="15 May 2014">15 May 2014</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/kenno/">S. Ken San</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=wait&amp;type=Forum">wait</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/4900/">wait not working on 401RE</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    10
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/24384/"><abbr class="timeago" title="10 May 2014">10 May 2014</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/hitesh241/">hitesh koradia</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=ethernet&amp;type=Forum">ethernet</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/4869/">Ethernet shield/module with ST Nucleo F401RE</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    1
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/24214/"><abbr class="timeago" title="23 Apr 2014">23 Apr 2014</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/kirchnet/">Thomas Kirchner</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=debug&amp;type=Forum">debug</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=Serial&amp;type=Forum">Serial</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/4751/">Windows7 serial configuration for debug</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    10
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/24195/"><abbr class="timeago" title="22 Apr 2014">22 Apr 2014</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/SeaFood/">Sea Food</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+            <tr class="tr-b">
+                <td>
+                    <i class="fas icon_topic" aria-hidden="true"></i>
+                    
+                        <span class="inline-taglist content-taglist">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            
+                                <a href="https://os.mbed.com/search/?q=bin&amp;type=Forum">bin</a>, 
+                            
+                                <a href="https://os.mbed.com/search/?q=offline%20compile&amp;type=Forum">offline compile</a>
+                            
+                        </span>
+                    
+                    <span class="topic  unread forum-title">
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/topic/4760/">Offline KeilMDK5.1 compile and Blink LED problem</a>
+                        
+                    </span>
+                </td>
+                <td class="post_count">
+                    8
+                </td>
+                <td class="updated">
+                    
+                        <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/post/24117/"><abbr class="timeago" title="14 Apr 2014">14 Apr 2014</abbr></a>
+                    
+                    by 
+
+<span class="author_info">
+    <img class="icon" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg.16x16_q85_crop-center.jpg" alt="">
+    <a href="https://os.mbed.com/users/overheat/">aaron xu</a>
+</span>
+<br>
+                </td>
+            </tr>
+        
+    </tbody></table>
+
+
+                
+                <a href="https://os.mbed.com/forum/platform-34-ST-Nucleo-F401RE-community/">See more related discussion topics</a>
+                
+                
+            
+        
+
+
+        
+            <h2><a name="questions"> </a><a href="https://os.mbed.com/platforms/ST-Nucleo-F401RE/#questions">Questions</a></h2>
+            
+                
+                    
+                        <div class="question">
+                            <a href="https://os.mbed.com/questions/86732/Ported-to-STM32F401CCU6-failed-heads-up-/" style="color: inherit !important;">
+                                <div class="stats">
+                                    
+                                    <div class="answers hasanswers" title="This question has 2 answers.">
+                                    
+                                    2 answers
+                                    </div>
+                                </div>
+                            </a>
+
+                            
+
+                            <a href="https://os.mbed.com/questions/86732/Ported-to-STM32F401CCU6-failed-heads-up-/" class="title" title="I uses online compiler to export STM32_USBSerial project with Nucleo-F401RE to Keil uVision5 IDE. Then I switched some configuration like target and …">
+                                Ported to STM32F401CCU6 failed, heads up needed.
+                            </a>
+
+                            <span class="qdata">
+                                <span class="authortext"><a href="https://os.mbed.com/users/allankliu/"><img alt="" class="icon" width="16px" height="16px" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg"></a> <a href="https://os.mbed.com/users/allankliu/"> Kai Liu</a></span> <br>
+                                <abbr title="Mon 12 Aug 2019 15:40">6&nbsp;years, 1&nbsp;month ago</abbr>
+                            </span>
+
+                            <p class="tags">
+                            
+                                <i class="fas fa-tag" aria-hidden="true"></i>
+                                
+                                <a href="https://os.mbed.com/questions/tag/NuCleo-F401RE">NuCleo-F401RE</a>
+                                
+                            
+                            </p>
+                        </div>
+                    
+                
+                    
+                        <div class="question">
+                            <a href="https://os.mbed.com/questions/86075/I2C-Not-working-on-F411RE/" style="color: inherit !important;">
+                                <div class="stats">
+                                    
+                                    <div class="answers noanswers" title="This question has no answers.">
+                                    
+                                    0 answers
+                                    </div>
+                                </div>
+                            </a>
+
+                            
+
+                            <a href="https://os.mbed.com/questions/86075/I2C-Not-working-on-F411RE/" class="title" title="Hello to everyone!
+
+I am a novice so I apologize for posting probably trivial questions. 
+
+I tested I2C communication on stm F411RE using mbed co…">
+                                I2C Not working on F411RE
+                            </a>
+
+                            <span class="qdata">
+                                <span class="authortext"><a href="https://os.mbed.com/users/nicolaadami/"><img alt="" class="icon" width="16px" height="16px" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg"></a> <a href="https://os.mbed.com/users/nicolaadami/"> Nicola Adami</a></span> <br>
+                                <abbr title="Fri 31 May 2019 15:32">6&nbsp;years, 3&nbsp;months ago</abbr>
+                            </span>
+
+                            <p class="tags">
+                            
+                                <i class="fas fa-tag" aria-hidden="true"></i>
+                                
+                                <a href="https://os.mbed.com/questions/tag/I2C">I2C</a>, 
+                                
+                                <a href="https://os.mbed.com/questions/tag/NUCLEO-F411RE">NUCLEO-F411RE</a>
+                                
+                            
+                            </p>
+                        </div>
+                    
+                
+                    
+                        <div class="question">
+                            <a href="https://os.mbed.com/questions/85922/The-interface-firmware-FAILED-to-resetha/" style="color: inherit !important;">
+                                <div class="stats">
+                                    
+                                    <div class="answers noanswers" title="This question has no answers.">
+                                    
+                                    0 answers
+                                    </div>
+                                </div>
+                            </a>
+
+                            
+
+                            <a href="https://os.mbed.com/questions/85922/The-interface-firmware-FAILED-to-resetha/" class="title" title="i upgrade the firmware version which is supported to V2J32M22 for ST-LINK/V2-1, still the FAIL txt come, please help me to fix the problem.
+
+thanks…">
+                                The interface firmware FAILED to reset/halt the target MCU for STM32F401RE
+                            </a>
+
+                            <span class="qdata">
+                                <span class="authortext"><a href="https://os.mbed.com/users/MACHARLAAAAA/"><img alt="" class="icon" width="16px" height="16px" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg"></a> <a href="https://os.mbed.com/users/MACHARLAAAAA/"> m mounika</a></span> <br>
+                                <abbr title="Wed 15 May 2019 06:15">6&nbsp;years, 4&nbsp;months ago</abbr>
+                            </span>
+
+                            <p class="tags">
+                            
+                                <i class="fas fa-tag" aria-hidden="true"></i>
+                                
+                                <a href="https://os.mbed.com/questions/tag/NuCleo-F401RE">NuCleo-F401RE</a>
+                                
+                            
+                            </p>
+                        </div>
+                    
+                
+                    
+                        <div class="question">
+                            <a href="https://os.mbed.com/questions/84049/Can-I-debug-this-board-with-pyOCD/" style="color: inherit !important;">
+                                <div class="stats">
+                                    
+                                    <div class="answers hasanswers" title="This question has 1 answers.">
+                                    
+                                    1 answer
+                                    </div>
+                                </div>
+                            </a>
+
+                            
+
+                            <a href="https://os.mbed.com/questions/84049/Can-I-debug-this-board-with-pyOCD/" class="title" title="I have just seen that pyOCD supports stlinkv2 and installed version 0.14.3 using pip.  I know that the board isn&#39;t supported directly, but wanted to …">
+                                Can I debug this board with pyOCD?
+                            </a>
+
+                            <span class="qdata">
+                                <span class="authortext"><a href="https://os.mbed.com/users/ambowman/"><img alt="" class="icon" width="16px" height="16px" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg"></a> <a href="https://os.mbed.com/users/ambowman/"> Alan Bowman</a></span> <br>
+                                <abbr title="Wed 09 Jan 2019 08:07">6&nbsp;years, 8&nbsp;months ago</abbr>
+                            </span>
+
+                            <p class="tags">
+                            
+                                <i class="fas fa-tag" aria-hidden="true"></i>
+                                
+                                <a href="https://os.mbed.com/questions/tag/NuCleo-F401RE">NuCleo-F401RE</a>, 
+                                
+                                <a href="https://os.mbed.com/questions/tag/pyOCD">pyOCD</a>
+                                
+                            
+                            </p>
+                        </div>
+                    
+                
+                    
+                        <div class="question">
+                            <a href="https://os.mbed.com/questions/83234/ANALOG-DIGITAL/" style="color: inherit !important;">
+                                <div class="stats">
+                                    
+                                    <div class="answers noanswers" title="This question has no answers.">
+                                    
+                                    0 answers
+                                    </div>
+                                </div>
+                            </a>
+
+                            
+
+                            <a href="https://os.mbed.com/questions/83234/ANALOG-DIGITAL/" class="title" title="Design a program (including the flow chart and code) for the development board NUCLEO-F401RE and that must meets the following requirements:
+a. When…">
+                                ANALOG-DIGITAL
+                            </a>
+
+                            <span class="qdata">
+                                <span class="authortext"><a href="https://os.mbed.com/users/nicolas1595/"><img alt="" class="icon" width="16px" height="16px" src="./NUCLEO-F401RE _ Mbed_files/default_profile.jpg"></a> <a href="https://os.mbed.com/users/nicolas1595/"> Nicolas Alfaro</a></span> <br>
+                                <abbr title="Mon 19 Nov 2018 18:03">6&nbsp;years, 10&nbsp;months ago</abbr>
+                            </span>
+
+                            <p class="tags">
+                            
+                                <i class="fas fa-tag" aria-hidden="true"></i>
+                                
+                                <a href="https://os.mbed.com/questions/tag/NuCleo-F401RE">NuCleo-F401RE</a>
+                                
+                            
+                            </p>
+                        </div>
+                    
+                
+
+                
+                    
+                        <a href="https://os.mbed.com/questions/related/72/34/ST-Nucleo-F401RE/">See more related questions</a>
+                    
+                
+
+            
+        
+    </div>
+</div>
+
+
+    </div>
+
+    <div class="three columns sidebar ">
+        
+    
+        <div class="panel promote">
+    <div class="row">
+        <div class="two columns">
+            <span class="fa-stack fa-lg">
+                <i class="fas fa-square fa-stack-2x"></i>
+                <i class="fas fa-terminal fa-stack-1x fa-inverse"></i>
+            </span>
+        </div>
+        <div class="ten columns">
+            <p class="promote-text toolbox">
+                To compile a program for this board using Mbed CLI, use
+                <span style="font-weight: 600;">
+                    nucleo_f401re
+                </span>
+                as the target name.
+            </p>
+        </div>
+    </div>
+</div>
+    
+
+        
+            <div class="panel statspanel">
+              <h5 class="subheader">Board Partner</h5>
+              <a href="https://os.mbed.com/teams/ST/">
+              
+                    <img src="./NUCLEO-F401RE _ Mbed_files/ST_logo_2020_blue_V_cmyk.jpg.250x250_q85.jpg" width="250" height="192">
+              </a>
+              <h3><a href="https://os.mbed.com/teams/ST/">ST</a></h3>
+              <p>A world leader in providing the semiconductor solutions that make a positive contribution to people’s lives, both today and in the future.</p>
+            </div>
+        
+
+
+    
+
+    <div class="panel statspanel">
+        
+            
+                <p align="center">
+                    <a class="button" href="https://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-nucleo/nucleo-f401re.html#samplebuy-scroll"><i class="fas fa-shopping-cart" aria-hidden="true"></i>&nbsp;Buy Now</a>
+                </p>
+            
+        
+    </div>
+
+    
+    <div class="panel">
+        <h5 class="subheader">
+            <img src="./NUCLEO-F401RE _ Mbed_files/arm_mbed_enabled_block_lockup_vertical.svg" height="25" width="25" alt="Mbed Enabled">
+            Mbed Enabled
+        </h5>
+        <ul class="mbed-support">
+            
+                <li>Baseline</li>
+            
+        </ul>
+    </div>
+
+
+
+    <div class="panel">
+        <h5 class="subheader">Mbed OS support</h5>
+        <ul class="mbed-support">
+            
+                <li>Mbed OS 2</li>
+            
+                <li>Mbed OS 5.10</li>
+            
+                <li>Mbed OS 5.11</li>
+            
+                <li>Mbed OS 5.12</li>
+            
+                <li>Mbed OS 5.13</li>
+            
+                <li>Mbed OS 5.14</li>
+            
+                <li>Mbed OS 5.15</li>
+            
+                <li>Mbed OS 5.4</li>
+            
+                <li>Mbed OS 5.5</li>
+            
+                <li>Mbed OS 5.6</li>
+            
+                <li>Mbed OS 5.7</li>
+            
+                <li>Mbed OS 5.8</li>
+            
+                <li>Mbed OS 5.9</li>
+            
+                <li>Mbed OS 6.0</li>
+            
+                <li>Mbed OS 6.1</li>
+            
+                <li>Mbed OS 6.10</li>
+            
+                <li>Mbed OS 6.11</li>
+            
+                <li>Mbed OS 6.12</li>
+            
+                <li>Mbed OS 6.13</li>
+            
+                <li>Mbed OS 6.14</li>
+            
+                <li>Mbed OS 6.15</li>
+            
+                <li>Mbed OS 6.2</li>
+            
+                <li>Mbed OS 6.3</li>
+            
+                <li>Mbed OS 6.4</li>
+            
+                <li>Mbed OS 6.5</li>
+            
+                <li>Mbed OS 6.6</li>
+            
+                <li>Mbed OS 6.7</li>
+            
+                <li>Mbed OS 6.8</li>
+            
+                <li>Mbed OS 6.9</li>
+            
+        </ul>
+    </div>
+
+
+
+
+    
+        <div class="panel ">
+            <h3 class="subheader">Example programs</h3>
+            <p>
+                
+                    
+
+</p><div class="contentitem repo-tiny">
+    <a class="repo-link" href="https://os.mbed.com/teams/ST/code/Seeed_BlueBot_demo/">
+    
+        <span class="repo-meta-os-version">
+            
+
+
+Mbed 2 <span class="warning-badge">deprecated</span>
+
+
+        </span>
+    
+    
+        <i title="This repository is a program" class="fas icon_program" aria-hidden="true"></i>
+    
+
+    Seeed_BlueBot_demo
+</a>
+
+    <div class="repo-meta">
+        <ul>
+            
+            
+        </ul>
+        <ul>
+            <li>
+                <a title="Number of commits" href="https://os.mbed.com/teams/ST/code/Seeed_BlueBot_demo/%7Dshortlog">
+                    <i class="fas icon_commits" aria-hidden="true"></i>
+                    <b>6</b>
+                </a>
+            </li>
+            <li>
+                <a title="How many times imported into the Mbed Online Compiler" href="https://os.mbed.com/teams/ST/code/Seeed_BlueBot_demo/">
+                    <i class="fas icon_imports" aria-hidden="true"></i>
+                    <b>37612</b>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="repo-description">
+        Nucleo board with Seeed bot and bluetooth shields demo.
+    </div>
+
+    
+        <div class="repo-tags">
+            <i class="fas fa-tag" aria-hidden="true"></i>
+            
+                <a href="https://os.mbed.com/search/?q=bluetooth">
+                    bluetooth
+                </a>, 
+            
+                <a href="https://os.mbed.com/search/?q=bot">
+                    bot
+                </a>, 
+            
+                <a href="https://os.mbed.com/search/?q=Nucleo">
+                    Nucleo
+                </a>, 
+            
+                <a href="https://os.mbed.com/search/?q=Seeed">
+                    Seeed
+                </a>
+            
+        </div>
+    
+
+    <div class="repo-last-updated">
+        
+        Last updated: <abbr class="timeago" title="21 May 2015">21 May 2015</abbr>
+        
+    </div>
+</div>
+
+                
+                    
+
+<div class="contentitem repo-tiny">
+    <a class="repo-link" href="https://os.mbed.com/teams/mbed-os-examples/code/mbed-os-example-mbed5-blinky/">
+    
+        <span class="repo-meta-os-version">
+            
+
+
+Mbed OS
+
+
+        </span>
+    
+    
+        <i title="This repository is a program" class="fas icon_program" aria-hidden="true"></i>
+    
+
+    mbed-os-example-mbed5-blinky
+</a>
+
+    <div class="repo-meta">
+        <ul>
+            
+            <li>
+                <i title="Featured" class="fas icon_tick" aria-hidden="true"></i> Featured
+            </li>
+            
+            
+        </ul>
+        <ul>
+            <li>
+                <a title="Number of commits" href="https://os.mbed.com/teams/mbed-os-examples/code/mbed-os-example-mbed5-blinky/%7Dshortlog">
+                    <i class="fas icon_commits" aria-hidden="true"></i>
+                    <b>107</b>
+                </a>
+            </li>
+            <li>
+                <a title="How many times imported into the Mbed Online Compiler" href="https://os.mbed.com/teams/mbed-os-examples/code/mbed-os-example-mbed5-blinky/">
+                    <i class="fas icon_imports" aria-hidden="true"></i>
+                    <b>195500</b>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="repo-description">
+        This is a very simple guide, reviewing the steps required to get Blinky working on an Mbed OS platform.
+    </div>
+
+    
+
+    <div class="repo-last-updated">
+        
+        Last updated: <abbr class="timeago" title="22 Nov 2019">22 Nov 2019</abbr>
+        
+    </div>
+</div>
+
+                
+                    
+
+<div class="contentitem repo-tiny">
+    <a class="repo-link" href="https://os.mbed.com/teams/ST/code/IDW01M1_Cloud_IBM/">
+    
+        <span class="repo-meta-os-version">
+            
+
+
+Mbed 2 <span class="warning-badge">deprecated</span>
+
+
+        </span>
+    
+    
+        <i title="This repository is a program" class="fas icon_program" aria-hidden="true"></i>
+    
+
+    IDW01M1_Cloud_IBM
+</a>
+
+    <div class="repo-meta">
+        <ul>
+            
+            
+        </ul>
+        <ul>
+            <li>
+                <a title="Number of commits" href="https://os.mbed.com/teams/ST/code/IDW01M1_Cloud_IBM/%7Dshortlog">
+                    <i class="fas icon_commits" aria-hidden="true"></i>
+                    <b>25</b>
+                </a>
+            </li>
+            <li>
+                <a title="How many times imported into the Mbed Online Compiler" href="https://os.mbed.com/teams/ST/code/IDW01M1_Cloud_IBM/">
+                    <i class="fas icon_imports" aria-hidden="true"></i>
+                    <b>11753</b>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="repo-description">
+        Connect through Wifi to IBM MQTT cloud https://quickstart.internetofthings.ibmcloud.com
+    </div>
+
+    
+
+    <div class="repo-last-updated">
+        
+        Last updated: <abbr class="timeago" title="24 Nov 2016">24 Nov 2016</abbr>
+        
+    </div>
+</div>
+
+                
+                    
+
+<div class="contentitem repo-tiny">
+    <a class="repo-link" href="https://os.mbed.com/teams/ST/code/HelloWorld_IDW01M1v2/">
+    
+        <span class="repo-meta-os-version">
+            
+
+
+Mbed 2 <span class="warning-badge">deprecated</span>
+
+
+        </span>
+    
+    
+        <i title="This repository is a program" class="fas icon_program" aria-hidden="true"></i>
+    
+
+    HelloWorld_IDW01M1v2
+</a>
+
+    <div class="repo-meta">
+        <ul>
+            
+            
+        </ul>
+        <ul>
+            <li>
+                <a title="Number of commits" href="https://os.mbed.com/teams/ST/code/HelloWorld_IDW01M1v2/%7Dshortlog">
+                    <i class="fas icon_commits" aria-hidden="true"></i>
+                    <b>13</b>
+                </a>
+            </li>
+            <li>
+                <a title="How many times imported into the Mbed Online Compiler" href="https://os.mbed.com/teams/ST/code/HelloWorld_IDW01M1v2/">
+                    <i class="fas icon_imports" aria-hidden="true"></i>
+                    <b>9733</b>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="repo-description">
+        Simple test application for the STMicroelectronics X-NUCLEO-IDW01M1 Wi-Fi expansion board.
+    </div>
+
+    
+        <div class="repo-tags">
+            <i class="fas fa-tag" aria-hidden="true"></i>
+            
+                <a href="https://os.mbed.com/search/?q=Nucleo">
+                    Nucleo
+                </a>, 
+            
+                <a href="https://os.mbed.com/search/?q=stm32">
+                    stm32
+                </a>, 
+            
+                <a href="https://os.mbed.com/search/?q=Wi-Fi">
+                    Wi-Fi
+                </a>, 
+            
+                <a href="https://os.mbed.com/search/?q=X-NUCLEO-IDW01M1">
+                    X-NUCLEO-IDW01M1
+                </a>
+            
+        </div>
+    
+
+    <div class="repo-last-updated">
+        
+        Last updated: <abbr class="timeago" title="16 Jan 2017">16 Jan 2017</abbr>
+        
+    </div>
+</div>
+
+                
+                    
+
+<div class="contentitem repo-tiny">
+    <a class="repo-link" href="https://os.mbed.com/teams/ST/code/STM32_ADC_InternalChannels/">
+    
+        <span class="repo-meta-os-version">
+            
+
+
+Mbed 2 <span class="warning-badge">deprecated</span>
+
+
+        </span>
+    
+    
+        <i title="This repository is a program" class="fas icon_program" aria-hidden="true"></i>
+    
+
+    STM32_ADC_InternalChannels
+</a>
+
+    <div class="repo-meta">
+        <ul>
+            
+            
+        </ul>
+        <ul>
+            <li>
+                <a title="Number of commits" href="https://os.mbed.com/teams/ST/code/STM32_ADC_InternalChannels/%7Dshortlog">
+                    <i class="fas icon_commits" aria-hidden="true"></i>
+                    <b>9</b>
+                </a>
+            </li>
+            <li>
+                <a title="How many times imported into the Mbed Online Compiler" href="https://os.mbed.com/teams/ST/code/STM32_ADC_InternalChannels/">
+                    <i class="fas icon_imports" aria-hidden="true"></i>
+                    <b>49840</b>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="repo-description">
+        ADC internal channels read example.
+    </div>
+
+    
+        <div class="repo-tags">
+            <i class="fas fa-tag" aria-hidden="true"></i>
+            
+                <a href="https://os.mbed.com/search/?q=Internal%20Channels">
+                    Internal Channels
+                </a>, 
+            
+                <a href="https://os.mbed.com/search/?q=stm32">
+                    stm32
+                </a>, 
+            
+                <a href="https://os.mbed.com/search/?q=temperature%20sensor">
+                    temperature sensor
+                </a>, 
+            
+                <a href="https://os.mbed.com/search/?q=VBAT">
+                    VBAT
+                </a>
+            
+        </div>
+    
+
+    <div class="repo-last-updated">
+        
+        Last updated: <abbr class="timeago" title="17 Aug 2017">17 Aug 2017</abbr>
+        
+    </div>
+</div>
+
+                
+                    
+
+<div class="contentitem repo-tiny">
+    <a class="repo-link" href="https://os.mbed.com/teams/ST/code/HelloWorld_IHM01A1/">
+    
+        <span class="repo-meta-os-version">
+            
+
+
+Mbed 2 <span class="warning-badge">deprecated</span>
+
+
+        </span>
+    
+    
+        <i title="This repository is a program" class="fas icon_program" aria-hidden="true"></i>
+    
+
+    HelloWorld_IHM01A1
+</a>
+
+    <div class="repo-meta">
+        <ul>
+            
+            
+        </ul>
+        <ul>
+            <li>
+                <a title="Number of commits" href="https://os.mbed.com/teams/ST/code/HelloWorld_IHM01A1/%7Dshortlog">
+                    <i class="fas icon_commits" aria-hidden="true"></i>
+                    <b>38</b>
+                </a>
+            </li>
+            <li>
+                <a title="How many times imported into the Mbed Online Compiler" href="https://os.mbed.com/teams/ST/code/HelloWorld_IHM01A1/">
+                    <i class="fas icon_imports" aria-hidden="true"></i>
+                    <b>1830</b>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="repo-description">
+        Simple test application for the STMicroelectronics X-NUCLEO-IHM01A1 Stepper Motor Control Expansion Board.
+    </div>
+
+    
+
+    <div class="repo-last-updated">
+        
+        Last updated: <abbr class="timeago" title="13 Mar 2017">13 Mar 2017</abbr>
+        
+    </div>
+</div>
+
+                
+                    
+
+<div class="contentitem repo-tiny">
+    <a class="repo-link" href="https://os.mbed.com/teams/ST/code/HelloWorld_IHM02A1/">
+    
+        <span class="repo-meta-os-version">
+            
+
+
+Mbed 2 <span class="warning-badge">deprecated</span>
+
+
+        </span>
+    
+    
+        <i title="This repository is a program" class="fas icon_program" aria-hidden="true"></i>
+    
+
+    HelloWorld_IHM02A1
+</a>
+
+    <div class="repo-meta">
+        <ul>
+            
+            
+        </ul>
+        <ul>
+            <li>
+                <a title="Number of commits" href="https://os.mbed.com/teams/ST/code/HelloWorld_IHM02A1/%7Dshortlog">
+                    <i class="fas icon_commits" aria-hidden="true"></i>
+                    <b>27</b>
+                </a>
+            </li>
+            <li>
+                <a title="How many times imported into the Mbed Online Compiler" href="https://os.mbed.com/teams/ST/code/HelloWorld_IHM02A1/">
+                    <i class="fas icon_imports" aria-hidden="true"></i>
+                    <b>3280</b>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="repo-description">
+        Simple test application for the STMicroelectronics X-NUCLEO-IHM02A1 Stepper Motor Control Expansion Board.
+    </div>
+
+    
+
+    <div class="repo-last-updated">
+        
+        Last updated: <abbr class="timeago" title="13 Mar 2017">13 Mar 2017</abbr>
+        
+    </div>
+</div>
+
+                
+            <p></p>
+        </div>
+    
+    
+      <div class="panel cmsis-board-page">
+          <h5 class="subheader">CMSIS support</h5>
+          <p>
+              Find documentation, software examples and the CMSIS Board Support Pack.
+          </p>
+          <a href="https://www.keil.arm.com/boards/stmicroelectronics-nucleo-f401re-revc-3ab5dc9/">
+              <i class="fas fa-link" aria-hidden="true"></i> NUCLEO-F401RE on keil.arm.com
+          </a>
+      </div>
+    
+
+
+    </div>
+</div>
+
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            mbed.initDismissableBanners($('[data-dismissable]'));
+            mbed.initNavNotification();
+        });
+    </script>
+
+    
+<footer class="global-footer">
+    <ul class="global-footer-media global-footer-row">
+        <li>
+            <a class="footer-media-icon" title="Twitter" href="https://twitter.com/ArmSoftwareDev">
+                <span class="fab fa-twitter-square fa-2x"></span>
+                <span class="global-footer-show-on-large-screens">Twitter</span>
+            </a>
+        </li>
+        <li>
+            <a class="footer-media-icon" title="YouTube" href="https://www.youtube.com/c/ArmSoftwareDevelopers">
+                <span class="fab fa-youtube-square fa-2x"></span>
+                <span class="global-footer-show-on-large-screens">YouTube</span>
+            </a>
+        </li>
+        <li>
+            <a class="footer-media-icon" title="Forum" href="http://forums.mbed.com/">
+                <span class="fas fa-comments fa-2x"></span>
+                <span class="global-footer-show-on-large-screens">Forum</span>
+            </a>
+        </li>
+        <li>
+            <a class="footer-media-icon" title="Blog" href="http://blog.mbed.com/">
+                <span class="fas fa-pen-square fa-2x"></span>
+                <span class="global-footer-show-on-large-screens">Blog</span>
+            </a>
+        </li>
+    </ul>
+
+    <div class="global-footer-copyright global-footer-row">
+        <div class="copyright-statement">Copyright © <script>document.write(new Date().getFullYear());</script>2025 Arm Limited (or its affiliates).</div>
+        <ul class="copyright-links">
+            <li><a href="https://os.mbed.com/">Home</a></li>
+            <li><a href="https://www.arm.com/company/policies/terms-and-conditions">Website Terms</a></li>
+            <li><a href="https://www.arm.com/company/policies/privacy">Privacy</a></li>
+            <li><a href="https://www.arm.com/company/policies/cookies">Cookies</a></li>
+            <li><a href="http://www.arm.com/company/policies/trademarks">Trademarks</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+
+    <div id="cookiemodule" style="display: none;">
+    <h5>Important Information for this Arm website</h5>
+    <div id="cookiecontent">
+        <p>
+            This site uses cookies to store information on your computer.
+            By continuing to use our site, you consent to our cookies.
+            If you are not happy with the use of these cookies, please review our
+            <a href="https://www.arm.com/company/policies/cookies">Cookie Policy</a>
+            to learn how they can be disabled.
+            By disabling cookies, some features of the site will not work.
+        </p>
+        <button id="acceptcookie">Accept and hide this message</button>
+    </div>
+</div>
+<script src="./NUCLEO-F401RE _ Mbed_files/cookie_law.js"></script><script id="" text="" charset="" type="text/javascript" src="./NUCLEO-F401RE _ Mbed_files/saved_resource"></script>
+
+
+
+
+<div id="access-warning-modal" class="reveal-modal">
+    <h2>Access Warning</h2>
+    <p>You do not have the correct permissions to perform this operation.</p>
+    <a class="close-reveal-modal">×</a>
+</div>
+
+
+
+
+
+<iframe id="_hjSafeContext_99579105" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="./NUCLEO-F401RE _ Mbed_files/saved_resource.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><div class="ub-emb-container"><div></div></div></body></html>
