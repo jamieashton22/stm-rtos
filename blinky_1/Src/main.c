@@ -2,13 +2,22 @@
 
 #include <stdint.h>
 #include "stm32f401xe.h"
+#include "core_cm4.h"
 
 #if !defined(__SOFT_FP__) && defined(__ARM_FP)
   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
 #endif
 
+
+// POINTERS TO MEM ADDRESSES
+#define SYST_CSR (*(volatile uint32_t*) 0xE000E010)	//systick control and status register
+#define SYST_RVR (*(volatile uint32_t*) 0xE000E014)	// reload value register
+#define SYST_CVR (*(volatile uint32_t*) 0xE000E018)		// current val register, write any value to clear
+
+void SysTick_Handler(void);
 void delay(volatile uint32_t count); // function to delay
 void initGPIO(void);
+void initSYSTICK(void);
 
 void delay(volatile uint32_t count){
 	// parameter is volatile because tells compiler not to optimise this variable,
@@ -41,14 +50,23 @@ void initGPIO(void){
 
 }
 
+void initSysTick(void){
+
+	SYST_RVR = 16000000 - 1; // 1 second for 16MHz
+	SYST_CVR = 0;			// write value to CVR to clear it
+	SYST_CSR = (1U << 0) | (1U << 1) | (1U << 2);	// enable, tick-int and clk-source set
+
+}
+
+void SysTick_Handler(void){
+
+	GPIOA->ODR ^= (1U << 5);	//xor - toggles LED
+
+}
+
 int main(void)
 {
 	initGPIO();
-
-	while(1){
-	GPIOA->ODR |=(1U << 5);	// turn led on
-	delay(500000);
-	GPIOA->ODR &= ~(1U << 5);	// turn led off
-	delay(500000);}
+	initSysTick();
 
 }
