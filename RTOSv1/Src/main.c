@@ -78,15 +78,26 @@ void blockingDelay_ms(uint32_t delay_time){
 
 }
 
+
 int main(void)
 {
 	initGPIO();
 	initSysTick(16000000 / 1000);	//set a 1 ms tick at 16MHz
 
+	uint32_t start_time = systick_ms;
+
 	while(1){
 
-		GPIOA->ODR ^= (1U << 5);	// toggle LED
-		blockingDelay_ms(1000);
+		uint32_t elapsed_time = systick_ms - start_time;
+
+		if(elapsed_time > 2000){
+			// execute task
+			GPIOA->ODR ^= (1U << 5);
+			start_time = systick_ms;
+		}
+
 
 	}
+
+
 }
