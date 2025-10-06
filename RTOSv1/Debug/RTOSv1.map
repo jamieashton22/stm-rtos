@@ -70,6 +70,37 @@ Discarded input sections
  .text          0x00000000        0x0 ./Src/main.o
  .data          0x00000000        0x0 ./Src/main.o
  .bss           0x00000000        0x0 ./Src/main.o
+ .group         0x00000000        0xc ./Src/scheduler.o
+ .group         0x00000000        0xc ./Src/scheduler.o
+ .group         0x00000000        0xc ./Src/scheduler.o
+ .group         0x00000000        0xc ./Src/scheduler.o
+ .group         0x00000000        0xc ./Src/scheduler.o
+ .group         0x00000000        0xc ./Src/scheduler.o
+ .group         0x00000000        0xc ./Src/scheduler.o
+ .group         0x00000000        0xc ./Src/scheduler.o
+ .group         0x00000000        0xc ./Src/scheduler.o
+ .group         0x00000000        0xc ./Src/scheduler.o
+ .group         0x00000000        0xc ./Src/scheduler.o
+ .group         0x00000000        0xc ./Src/scheduler.o
+ .group         0x00000000        0xc ./Src/scheduler.o
+ .group         0x00000000        0xc ./Src/scheduler.o
+ .text          0x00000000        0x0 ./Src/scheduler.o
+ .data          0x00000000        0x0 ./Src/scheduler.o
+ .bss           0x00000000        0x0 ./Src/scheduler.o
+ .debug_macro   0x00000000      0xae4 ./Src/scheduler.o
+ .debug_macro   0x00000000       0x22 ./Src/scheduler.o
+ .debug_macro   0x00000000       0x8e ./Src/scheduler.o
+ .debug_macro   0x00000000       0x51 ./Src/scheduler.o
+ .debug_macro   0x00000000      0x103 ./Src/scheduler.o
+ .debug_macro   0x00000000       0x6a ./Src/scheduler.o
+ .debug_macro   0x00000000      0x1df ./Src/scheduler.o
+ .debug_macro   0x00000000       0x28 ./Src/scheduler.o
+ .debug_macro   0x00000000       0x1c ./Src/scheduler.o
+ .debug_macro   0x00000000       0x22 ./Src/scheduler.o
+ .debug_macro   0x00000000       0xfb ./Src/scheduler.o
+ .debug_macro   0x00000000     0x1011 ./Src/scheduler.o
+ .debug_macro   0x00000000      0x11f ./Src/scheduler.o
+ .debug_macro   0x00000000     0xb881 ./Src/scheduler.o
  .group         0x00000000        0xc ./Src/syscalls.o
  .group         0x00000000        0xc ./Src/syscalls.o
  .group         0x00000000        0xc ./Src/syscalls.o
@@ -514,6 +545,7 @@ LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.id
 LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.macos64_1.0.0.202411102158/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.macos64_1.0.0.202411102158/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
 LOAD ./Src/main.o
+LOAD ./Src/scheduler.o
 LOAD ./Src/syscalls.o
 LOAD ./Src/sysmem.o
 LOAD ./Startup/startup_stm32f401retx.o
@@ -556,24 +588,24 @@ LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.id
  .text.initGPIO
                 0x080001d4       0x3c ./Src/main.o
                 0x080001d4                initGPIO
+ .text.Task1    0x08000210        0xe ./Src/main.o
+                0x08000210                Task1
+ .text.Task2    0x0800021e        0xe ./Src/main.o
+                0x0800021e                Task2
+ .text.Task3    0x0800022c        0xe ./Src/main.o
+                0x0800022c                Task3
+ *fill*         0x0800023a        0x2 
+ .text.main     0x0800023c       0xec ./Src/main.o
+                0x0800023c                main
  .text.initSysTick
-                0x08000210       0x34 ./Src/main.o
-                0x08000210                initSysTick
+                0x08000328       0x34 ./Src/scheduler.o
+                0x08000328                initSysTick
  .text.SysTick_Handler
-                0x08000244       0x1c ./Src/main.o
-                0x08000244                SysTick_Handler
+                0x0800035c       0x1c ./Src/scheduler.o
+                0x0800035c                SysTick_Handler
  .text.scheduler
-                0x08000260       0xc0 ./Src/main.o
-                0x08000260                scheduler
- .text.Task1    0x08000320        0xe ./Src/main.o
-                0x08000320                Task1
- .text.Task2    0x0800032e        0xe ./Src/main.o
-                0x0800032e                Task2
- .text.Task3    0x0800033c        0xe ./Src/main.o
-                0x0800033c                Task3
- *fill*         0x0800034a        0x2 
- .text.main     0x0800034c       0xec ./Src/main.o
-                0x0800034c                main
+                0x08000378       0xc0 ./Src/scheduler.o
+                0x08000378                scheduler
  .text.Reset_Handler
                 0x08000438       0x50 ./Startup/startup_stm32f401retx.o
                 0x08000438                Reset_Handler
@@ -739,13 +771,12 @@ LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.id
  *(.bss)
  .bss           0x20000000       0x1c /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.macos64_1.0.0.202411102158/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.bss*)
+ .bss.TaskList  0x2000001c       0x24 ./Src/main.o
+                0x2000001c                TaskList
  .bss.systick_ms
-                0x2000001c        0x4 ./Src/main.o
-                0x2000001c                systick_ms
- .bss.TaskList  0x20000020       0x24 ./Src/main.o
-                0x20000020                TaskList
+                0x20000040        0x4 ./Src/scheduler.o
  .bss.last_time.0
-                0x20000044        0x4 ./Src/main.o
+                0x20000044        0x4 ./Src/scheduler.o
  *(COMMON)
                 0x20000048                        . = ALIGN (0x4)
                 0x20000048                        _ebss = .
@@ -777,71 +808,84 @@ LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.id
  .ARM.attributes
                 0x00000056       0x34 ./Src/main.o
  .ARM.attributes
-                0x0000008a       0x21 ./Startup/startup_stm32f401retx.o
+                0x0000008a       0x34 ./Src/scheduler.o
  .ARM.attributes
-                0x000000ab       0x34 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.macos64_1.0.0.202411102158/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-init.o)
+                0x000000be       0x21 ./Startup/startup_stm32f401retx.o
  .ARM.attributes
-                0x000000df       0x22 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.macos64_1.0.0.202411102158/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x000000df       0x34 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.macos64_1.0.0.202411102158/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-init.o)
+ .ARM.attributes
+                0x00000113       0x22 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.macos64_1.0.0.202411102158/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtn.o
 OUTPUT(RTOSv1.elf elf32-littlearm)
 LOAD linker stubs
 LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.macos64_1.0.0.202411102158/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a
 LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.macos64_1.0.0.202411102158/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a
 LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.macos64_1.0.0.202411102158/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a
 
-.debug_info     0x00000000      0x482
- .debug_info    0x00000000      0x452 ./Src/main.o
- .debug_info    0x00000452       0x30 ./Startup/startup_stm32f401retx.o
+.debug_info     0x00000000      0x5ab
+ .debug_info    0x00000000      0x3df ./Src/main.o
+ .debug_info    0x000003df      0x19c ./Src/scheduler.o
+ .debug_info    0x0000057b       0x30 ./Startup/startup_stm32f401retx.o
 
-.debug_abbrev   0x00000000      0x1aa
- .debug_abbrev  0x00000000      0x186 ./Src/main.o
- .debug_abbrev  0x00000186       0x24 ./Startup/startup_stm32f401retx.o
+.debug_abbrev   0x00000000      0x2a9
+ .debug_abbrev  0x00000000      0x169 ./Src/main.o
+ .debug_abbrev  0x00000169      0x11c ./Src/scheduler.o
+ .debug_abbrev  0x00000285       0x24 ./Startup/startup_stm32f401retx.o
 
-.debug_aranges  0x00000000       0x80
+.debug_aranges  0x00000000       0x98
  .debug_aranges
-                0x00000000       0x58 ./Src/main.o
+                0x00000000       0x40 ./Src/main.o
  .debug_aranges
-                0x00000058       0x28 ./Startup/startup_stm32f401retx.o
+                0x00000040       0x30 ./Src/scheduler.o
+ .debug_aranges
+                0x00000070       0x28 ./Startup/startup_stm32f401retx.o
 
 .debug_rnglists
-                0x00000000       0x58
+                0x00000000       0x65
  .debug_rnglists
-                0x00000000       0x3f ./Src/main.o
+                0x00000000       0x2c ./Src/main.o
  .debug_rnglists
-                0x0000003f       0x19 ./Startup/startup_stm32f401retx.o
+                0x0000002c       0x20 ./Src/scheduler.o
+ .debug_rnglists
+                0x0000004c       0x19 ./Startup/startup_stm32f401retx.o
 
-.debug_macro    0x00000000     0xdb1e
- .debug_macro   0x00000000       0xdb ./Src/main.o
- .debug_macro   0x000000db      0xae4 ./Src/main.o
- .debug_macro   0x00000bbf       0x22 ./Src/main.o
- .debug_macro   0x00000be1       0x8e ./Src/main.o
- .debug_macro   0x00000c6f       0x51 ./Src/main.o
- .debug_macro   0x00000cc0      0x103 ./Src/main.o
- .debug_macro   0x00000dc3       0x6a ./Src/main.o
- .debug_macro   0x00000e2d      0x1df ./Src/main.o
- .debug_macro   0x0000100c       0x28 ./Src/main.o
- .debug_macro   0x00001034       0x1c ./Src/main.o
- .debug_macro   0x00001050       0x22 ./Src/main.o
- .debug_macro   0x00001072       0xfb ./Src/main.o
- .debug_macro   0x0000116d     0x1011 ./Src/main.o
- .debug_macro   0x0000217e      0x11f ./Src/main.o
- .debug_macro   0x0000229d     0xb881 ./Src/main.o
+.debug_macro    0x00000000     0xdbff
+ .debug_macro   0x00000000       0xd7 ./Src/main.o
+ .debug_macro   0x000000d7      0xae4 ./Src/main.o
+ .debug_macro   0x00000bbb       0x22 ./Src/main.o
+ .debug_macro   0x00000bdd       0x8e ./Src/main.o
+ .debug_macro   0x00000c6b       0x51 ./Src/main.o
+ .debug_macro   0x00000cbc      0x103 ./Src/main.o
+ .debug_macro   0x00000dbf       0x6a ./Src/main.o
+ .debug_macro   0x00000e29      0x1df ./Src/main.o
+ .debug_macro   0x00001008       0x28 ./Src/main.o
+ .debug_macro   0x00001030       0x1c ./Src/main.o
+ .debug_macro   0x0000104c       0x22 ./Src/main.o
+ .debug_macro   0x0000106e       0xfb ./Src/main.o
+ .debug_macro   0x00001169     0x1011 ./Src/main.o
+ .debug_macro   0x0000217a      0x11f ./Src/main.o
+ .debug_macro   0x00002299     0xb881 ./Src/main.o
+ .debug_macro   0x0000db1a       0xe5 ./Src/scheduler.o
 
-.debug_line     0x00000000      0x68f
- .debug_line    0x00000000      0x614 ./Src/main.o
- .debug_line    0x00000614       0x7b ./Startup/startup_stm32f401retx.o
+.debug_line     0x00000000      0xb79
+ .debug_line    0x00000000      0x590 ./Src/main.o
+ .debug_line    0x00000590      0x56e ./Src/scheduler.o
+ .debug_line    0x00000afe       0x7b ./Startup/startup_stm32f401retx.o
 
-.debug_str      0x00000000    0x4f295
- .debug_str     0x00000000    0x4f295 ./Src/main.o
-                              0x4f3c7 (size before relaxing)
- .debug_str     0x0004f295       0x91 ./Startup/startup_stm32f401retx.o
+.debug_str      0x00000000    0x4f2b5
+ .debug_str     0x00000000    0x4f2b5 ./Src/main.o
+                              0x4f311 (size before relaxing)
+ .debug_str     0x0004f2b5    0x4f279 ./Src/scheduler.o
+ .debug_str     0x0004f2b5       0x91 ./Startup/startup_stm32f401retx.o
 
 .comment        0x00000000       0x43
  .comment       0x00000000       0x43 ./Src/main.o
                                  0x44 (size before relaxing)
+ .comment       0x00000043       0x44 ./Src/scheduler.o
 
-.debug_frame    0x00000000      0x148
- .debug_frame   0x00000000      0x11c ./Src/main.o
- .debug_frame   0x0000011c       0x2c /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.macos64_1.0.0.202411102158/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-init.o)
+.debug_frame    0x00000000      0x158
+ .debug_frame   0x00000000       0xb0 ./Src/main.o
+ .debug_frame   0x000000b0       0x7c ./Src/scheduler.o
+ .debug_frame   0x0000012c       0x2c /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.macos64_1.0.0.202411102158/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-init.o)
 
 .debug_line_str
                 0x00000000       0x75
